@@ -13,7 +13,7 @@ import (
 )
 
 /**
- * 将excel中的前三列转化为struct
+ * 将excel中的前四列转化为struct
  * 第一列字段类型		如 int
  * 第二列字段名称		如 显示顺序
  * 第三列字段名		如 id
