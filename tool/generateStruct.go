@@ -23,7 +23,7 @@ import (
 var (
 	lineNumber           = 4                                     // 每个工作表需要读取的行数
 	structBegin          = "type %s struct {\n"                  // 结构体开始
-	structValue          = "    %s %s	`col:\"%s\" client\"%s\"`" // 结构体的内容
+	structValue          = "    %s %s	`col:\"%s\" client:\"%s\"`" // 结构体的内容
 	structValueForServer = "    %s %s	`col:\"%s\"`"              // 服务端使用的结构体内容
 	structRemarks        = "	 // %s"                             // 结构体备注
 	structValueEnd       = "\n"                                  // 结构体内容结束
