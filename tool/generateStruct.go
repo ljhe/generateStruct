@@ -159,7 +159,7 @@ func (this *Generate) WriteNewFile(data string) error {
 	}
 	header = fmt.Sprintf(header, str[len(str)-1])
 	data = header + data
-	fw, err := os.OpenFile(this.savePath+"\\objs.go", os.O_RDWR|os.O_CREATE, 0644)
+	fw, err := os.OpenFile(this.savePath+"\\objs.go", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		return fmt.Errorf("WriteNewFile|OpenFile is err:%v", err)
 	}
